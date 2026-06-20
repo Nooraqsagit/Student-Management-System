@@ -5,7 +5,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         StudentManager manager = new StudentManager();
-
+        manager.loadFromFile();
         while (true) {
             System.out.println("\n===== Student Management System =====");
             System.out.println("1. Add Student");
@@ -77,8 +77,8 @@ public class Main {
                         manager.updateStudent(updateId, newName, newEmail, newBranch, newCgpa);
                     break;
                     case 6:
-                        System.out.println("Exiting...");
-                        sc.close();
+                        manager.saveToFile();
+                        System.out.println("Data saved successfully! Exiting....");
                         return;
                 default:
                     System.out.println("Invalid choice!");

@@ -1,0 +1,4 @@
+103,Noor,noor@mail.com,CSE,9.7
+104,Noyan,Noyan@mail.com,CSE,9.3
+67,Bamsi,bam@gmail.com,CSE,9.0
+68,steve,ste@gmail.com,CSE,7.7
